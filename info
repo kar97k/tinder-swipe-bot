@@ -1,0 +1,16 @@
+Список профилей, теперь 25:                                                                                                                                                                                 
+
+https://api.gotinder.com/v2/recs/core?locale=en
+
+
+Каждуу минуту отправляется запрос, в теле которого мои координаты:
+
+https://api.gotinder.com/v2/profile?include=account%2Cboost%2Ccontact_cards%2Cemail_settings%2Cinstagram%2Clikes%2Cnotifications%2Cplus_control%2Cproducts%2Cpurchase%2Creadreceipts%2Cspotify%2Csuper_likes%2Ctinder_u%2Ctravel%2Ctutorials%2Cuser&locale=en
+data - user - pos: {lat: 55.7867978, lon: 38.6060169}
+
+
+Поставить лайк
+
+var dislike = document.getElementsByClassName("button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style recsGamepad__button D(b) Bgc(#fff) Wc($transform) Start(15px) Scale(1.1):h");
+var like = document.getElementsByClassName("button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style recsGamepad__button D(b) Bgc(#fff) Wc($transform) End(15px) Scale(1.1):h");
+like[0].click();
