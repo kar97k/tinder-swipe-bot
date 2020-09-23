@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 var enable_swiping = true;
-var swiping_speed = 1000;
+var swiping_speed = 600;
 
 while (enable_swiping == true) {
 
@@ -16,10 +16,9 @@ The second one contains info about CURRENT one.
 Thats why I get [1] element of array
 */
 
-let current_profile = document.getElementsByClassName('CenterAlign D(f) Fld(r) W(100%) Px(8px) Pos(a)')[1];
+let current_profile = document.getElementsByClassName('CenterAlign D(f) Fld(r) W(100%) Px(8px) Pos(a)')[0];
 //get number of profile pictures by counting buttons in div
 var photo_quantity = current_profile.getElementsByTagName("button").length;
-console.log(photo_quantity);
 await sleep(swiping_speed);
 
 //Проверить, что есть описание, посчитав его длинну.
@@ -37,7 +36,7 @@ try {
     description_length = curr_prof_info[0].innerText.length;
 } catch (err) {
     description_length = 0;
-    console.log("Не ставлю лайки тёлкам без описания")
+    console.log("Нет описания")
 }
 
 //close "profile info"
@@ -48,7 +47,7 @@ await sleep(swiping_speed);
 //init like and dislike buttons
 var like_button = document.querySelector('button[aria-label="Like"]');
 var dislike_button = document.querySelector('button[aria-label="Nope"]');
-if ( photo_quantity > 2 && description_length > 30) {
+if ( photo_quantity > 1 && description_length > 30) {
     console.log("Like");
     like_button.click();
 } else {
