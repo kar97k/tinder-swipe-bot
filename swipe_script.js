@@ -4,6 +4,8 @@ function sleep(ms) {
 
 var enable_swiping = true;
 var swiping_speed = 600;
+var like_cnt = 0;
+var dis_cnt = 0;
 
 while (enable_swiping == true) {
 
@@ -49,9 +51,11 @@ var like_button = document.querySelector('button[aria-label="Like"]');
 var dislike_button = document.querySelector('button[aria-label="Nope"]');
 if ( photo_quantity > 1 && description_length > 30) {
     console.log("Like");
+    like_cnt++;
     like_button.click();
 } else {
     console.log("Nope");
+    dis_cnt++;
     dislike_button.click();
 }
 }

@@ -7,3 +7,6 @@ enable_swiping = false;
 
 Чтобы изменить скороть пролистывания профилей надо вставить в консоль новое значение переменной swiping_speed, например:
 swiping_speed = 500;
+
+Пример использования:
+https://youtu.be/zUynotRSIDA
