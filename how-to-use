@@ -10,3 +10,8 @@ swiping_speed = 500;
 
 Пример использования:
 https://youtu.be/zUynotRSIDA
+
+На страницах на русском языке может вообще не ставиться лайк. Тестировщик:
+"(В моём случае, необходимо было внести изменение у кнопок - перейти на кириллицу
+var like_button = document.querySelector('button[aria-label="Лайк"]');
+var dislike_button = document.querySelector('button[aria-label="Нет"]');"

@@ -11,14 +11,13 @@ while (enable_swiping == true) {
 
 /*
 Посчитать количество фотографий
-
 get div which contains buttons to switch profile pictures.
 there are nubmer of such divs, the first one contains info about pictures of NEXT profile
 The second one contains info about CURRENT one.
 Thats why I get [1] element of array
 */
 
-let current_profile = document.getElementsByClassName('CenterAlign D(f) Fld(r) W(100%) Px(8px) Pos(a)')[0];
+let current_profile = document.getElementsByClassName('CenterAlign D(f) Fxd(r) W(100%) Px(8px) Pos(a) TranslateZ(0)')[0];
 //get number of profile pictures by counting buttons in div
 var photo_quantity = current_profile.getElementsByTagName("button").length;
 await sleep(swiping_speed);
@@ -27,7 +26,7 @@ await sleep(swiping_speed);
 var description_length = 0;
 
 //click button "profile info"
-let close_info_button = document.getElementsByClassName('Pos(a) P(0) End(16px) B(40px) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Fl(end) Scale(1.2):h focus-button-style')[1];
+let close_info_button = document.getElementsByClassName('P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px) Mb(8px)--s focus-button-style')[1];
 close_info_button.click();
 
 //need to wait a second to load info
