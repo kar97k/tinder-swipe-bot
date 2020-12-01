@@ -46,8 +46,9 @@ info_button.click();
 await sleep(swiping_speed);
 
 //init like and dislike buttons
-var like_button = document.querySelector('button[aria-label="Like"]');
-var dislike_button = document.querySelector('button[aria-label="Nope"]');
+let like_button = document.getElementsByClassName('button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand D(b) Bgc(#fff) Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a')[2];
+let dislike_button = document.getElementsByClassName('button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand D(b) Bgc(#fff) Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a')[1];
+
 if ( photo_quantity > 1 && description_length > 30) {
     console.log("Like");
     like_cnt++;
