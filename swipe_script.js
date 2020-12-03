@@ -3,9 +3,11 @@ function sleep(ms) {
 }
 
 var enable_swiping = true;
-var swiping_speed = 450;
+var swiping_speed = 1000;
 var like_cnt = 0;
 var dis_cnt = 0;
+
+await sleep(swiping_speed);
 
 while (enable_swiping == true) {
 
@@ -43,7 +45,7 @@ try {
 //close "profile info"
 //let info_button = document.getElementsByClassName('End(12px) B(-20px) Pos(a) Z(2) CenterAlign Bdrs(50%) P(0) Scale(1.1):h Trsdu($normal) focus-button-style')[0];
 //info_button.click();
-//await sleep(swiping_speed);
+await sleep(swiping_speed);
 
 //init like and dislike buttons
 let like_button = document.getElementsByClassName('button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand D(b) Bgc(#fff) Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a')[1];
