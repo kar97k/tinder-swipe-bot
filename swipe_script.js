@@ -29,7 +29,7 @@ await sleep(swiping_speed);
 var description_length = 0;
 
 //click button "profile info"
-let close_info_button = document.getElementsByClassName('P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px) Mb(8px)--s focus-button-style')[1];
+let close_info_button = document.getElementsByClassName('P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px)--ml Mb(8px) focus-button-style')[1];
 close_info_button.click();
 
 //need to wait a second to load info
@@ -54,7 +54,7 @@ await sleep(swiping_speed);
 let like_button = document.getElementsByClassName('button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand D(b) Bgc(#fff) Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a')[1];
 let dislike_button = document.getElementsByClassName('button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand D(b) Bgc(#fff) Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a')[0];
 
-if ( photo_quantity > 1 && description_length > 150) {
+if ( photo_quantity > 1 && description_length > 100) {
     console.log("Like");
     like_cnt++;
     like_button.click();
