@@ -35,7 +35,7 @@ close_info_button.click();
 //need to wait a second to load info
 await sleep(swiping_speed);
 
-let curr_prof_info = document.getElementsByClassName('P(16px) Ta(start) Us(t) C($c-secondary) BreakWord Whs(pl) Fz($ms)');
+let curr_prof_info = document.getElementsByClassName('P(16px) Us(t) C($c-secondary) BreakWord Whs(pl) Fz($ms)');
 //if function in "try" ends with error, there are no discripton on profile
 try {
     description_length = curr_prof_info[0].innerText.length;
