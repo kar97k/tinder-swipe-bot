@@ -36,11 +36,7 @@ info_button.click();
 await sleep(swiping_speed);
 
 let curr_prof_info = document.getElementsByClassName('P(16px) Us(t) C($c-secondary) BreakWord Whs(pl) Fz($ms)');
-<<<<<<< HEAD
-//if function in "try" ends with error, there is no discripton on profile
-=======
-//if function in "try" ends with error, there are no discripton on profile
->>>>>>> e0f4b4ab425c1dcbd254e45676b141580f0ac15c
+
 try {
     description_length = curr_prof_info[0].innerText.length;
 } catch (err) {
