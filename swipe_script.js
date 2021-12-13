@@ -29,7 +29,7 @@ await sleep(swiping_speed);
 var description_length = 0;
 
 //click button "profile info"
-let info_button = document.getElementsByClassName('P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px)--ml Mb(8px) focus-button-style')[1];
+let info_button = document.getElementsByClassName('P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px)--ml Mb(8px) focus-button-style')[0];
 info_button.click();
 
 //need to wait a second to load info
